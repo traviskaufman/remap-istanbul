@@ -40,6 +40,16 @@ define([
 			}).then(function () {
 				assert.isTrue(fs.existsSync('tmp/html-report-main/__root__/inlinesource.ts.html'));
 			});
+		},
+
+		'code emitted as array': function () {
+			return main('tests/unit/support/coverage-code-array.json', {
+				'json': 'tmp/main-code-array.json'
+			}).then(function () {
+				assert.isTrue(fs.existsSync('tmp/main-code-array.json'));
+			}).catch(function(err) {
+				assert.fail(err);
+			});
 		}
 	});
 });

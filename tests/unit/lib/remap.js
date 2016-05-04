@@ -55,6 +55,14 @@ define([
 			assert(map.code);
 		},
 
+		'coverage includes code as array': function () {
+			var coverage = remap(loadCoverage('tests/unit/support/coverage-code.json'));
+			assert.instanceOf(coverage, Collector, 'Return values should be instance of Collector');
+			assert(coverage.store.map['inlinesource.ts']);
+			var map = JSON.parse(coverage.store.map['inlinesource.ts']);
+			assert(map.code);
+		},
+
 		'empty options': function () {
 			assert.throws(remap, TypeError);
 		},
