@@ -1,5 +1,8 @@
 # remap-istanbul
 
+> NOTE: This is a temporary fork until
+> https://github.com/SitePen/remap-istanbul/issues/55 is resolved.
+
 [![Build Status](https://travis-ci.org/SitePen/remap-istanbul.svg?branch=master)](https://travis-ci.org/SitePen/remap-istanbul) [![codecov.io](http://codecov.io/github/SitePen/remap-istanbul/coverage.svg?branch=master)](http://codecov.io/github/SitePen/remap-istanbul?branch=master)
 [![npm version](https://badge.fury.io/js/remap-istanbul.svg)](http://badge.fury.io/js/remap-istanbul)
 
